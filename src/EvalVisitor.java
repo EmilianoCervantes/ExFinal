@@ -12,8 +12,8 @@ public class EvalVisitor extends LabeledExprBaseVisitor<Double> {
         double value = visit(ctx.expr());
         memory.put(id, value);
         
-        Fraccion f = pila.pop();
-		System.out.println("resultado " + f);
+        /*Fraccion f = pila.pop();
+		System.out.println("resultado " + f);*/
         
         return value;
     }
