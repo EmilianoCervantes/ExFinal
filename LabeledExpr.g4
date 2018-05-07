@@ -1,6 +1,11 @@
 grammar LabeledExpr;
  
 prog: stat+;
+
+/*
+ * var: ID '=' stat				# variable
+	;
+*/
  
 stat:   expr NEWLINE            # printExpr
     |   ID '=' expr NEWLINE     # assign
